@@ -243,7 +243,7 @@ def reflect() -> dict:
             "_I'm Pip, Oro's trader. I trade one locked rule (Night Shift v3), write down every night, and look for patterns. "
             "I can propose changes. I can't make them: James decides, and only after a test on data I haven't seen._\n",
             "## Right now\n",
-            f"- **Mode:** paper on live prices (no real orders)",
+            "- **Mode:** paper on live prices (no real orders)",
             f"- **Trades on record:** {len(real)} paper/live · {len(bt)} backtest",
             f"- **Form ({label}):** last 10 = {_money(float(last.pnl.sum()))} · {int((last.pnl > 0).sum())}/{len(last)} wins · "
             f"current streak {'+' if cur > 0 else ''}{cur}",

@@ -1,5 +1,7 @@
 # Gold Futures Trading Bot
 
+![tests](https://github.com/chiodojames75-max/gold-futures-bot/actions/workflows/tests.yml/badge.svg)
+
 A rules-based trading bot for micro gold futures (MGC), with a research engine that tries to prove a strategy wrong before it ever trades.
 
 **Status:** paper trading only, on a practice account. No real money. Every result below is a backtest, which is hypothetical.
@@ -78,7 +80,7 @@ results/           Exit, stop, and filter research tables
 
 ```bash
 pip install -r requirements.txt
-python -m pytest -q                              # 23 tests: fills, risk, no look-ahead
+python -m pytest -q                              # 23 tests: fills, risk, no look-ahead (one skips by design)
 python scripts/run_research.py --synthetic       # sanity check: every strategy should fail on random data
 ```
 

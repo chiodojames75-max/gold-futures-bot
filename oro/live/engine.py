@@ -237,7 +237,6 @@ class Engine:
         rec = {"m": mk, "rule": rule, "house": 0, "in": r.Index.isoformat(), "side": sig.side, "entry": float(r.close),
                "stop": round(sig.stop, 4), "target": round(sig.target, 4), "score": round(score, 3), "note": sig.reason}
         if why.startswith(("Cool-down", "Brake")):
-            spec_ = MARKETS[mk]["contract"]
             self.shadow[mk] = {**rec, "size": 1, "stop": sig.stop, "target": sig.target, "shadow": True}
         if why:
             if True:
