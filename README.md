@@ -26,14 +26,16 @@ Based on documented research on overnight drift in futures (Boyarchenko, Larsen 
 
 ### Backtest (1 micro contract, hypothetical)
 
-| | Tuning period (2021–2023) | Unseen period (2024–Oct 2026) |
-|---|---|---|
-| Net result | slightly negative | **+$26,909** |
-| Win rate | | 59% |
-| Profit factor | | 1.52 |
-| Worst drawdown | | −$3,920 |
+Results on 2024–Oct 2026, data the strategy was never tuned on:
 
-The strategy lost a little in the tuning years and made money on recent data. That means the edge is recent and not guaranteed, which is why it's paper trading, not live.
+| Measure | Result |
+|---|---|
+| Net result | **+$26,909** |
+| Win rate | 59% |
+| Profit factor | 1.52 |
+| Worst drawdown | −$3,920 |
+
+On the 2021–2023 tuning years it was slightly negative (−$779). That means the edge is recent and not guaranteed, which is why it's paper trading, not live.
 
 ### Strategies tested and rejected
 
